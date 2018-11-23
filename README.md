@@ -1,7 +1,7 @@
 ## Server
 
 `cd server`
-`yarn && yarn start`
+`node index.js`
 
 ## Client
 
