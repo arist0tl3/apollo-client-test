@@ -24,9 +24,12 @@ const enhance = compose(
     onClick: () => {
       sample({
         refetchQueries: ['Dates'],
+        // Replace with below to make things work as expected
+        // refetchQueries: () => ['Dates'],
       });
     },
   })),
 );
+
 
 export default enhance(Button);
