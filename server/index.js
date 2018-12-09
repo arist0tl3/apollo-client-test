@@ -11,6 +11,7 @@ var schema = buildSchema(`
   }
   type Query {
     dates: Dates
+    title: String
   }
   type Mutation {
     sample: String
@@ -28,6 +29,7 @@ var root = {
   sample: () => {
     return 'Sample Success';
   },
+  title: () => `Title Number ${Math.floor(Math.random() * 10000)}`,
 };
 
 var app = express();

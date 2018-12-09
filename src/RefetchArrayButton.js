@@ -14,7 +14,7 @@ const Button = ({ onClick }) => (
     className="btn btn-default"
     onClick={() => onClick()}
   >
-    {'Click Me'}
+    {'Mutate and Refetch as Array'}
   </button>
 )
 
@@ -23,9 +23,7 @@ const enhance = compose(
   mapProps(({ sample }) => ({
     onClick: () => {
       sample({
-        refetchQueries: ['Dates'],
-        // Replace with below to make things work as expected
-        // refetchQueries: () => ['Dates'],
+        refetchQueries: ['Dates', 'Title'],
       });
     },
   })),
