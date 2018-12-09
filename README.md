@@ -1,11 +1,17 @@
 ## Server
 
-`cd server`
-`node index.js`
+```
+cd server
+yarn
+node index.js
+```
 
 ## Client
 
-`yarn && yarn start`
+```
+yarn
+yarn start
+```
 
 ## What to Look For
 
